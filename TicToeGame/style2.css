@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+  }
+  
+  body{
+      background:linear-gradient(to bottom left,#9900ff 33%,#3366ff 100%) ;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  h1{
+      color: white;
+      font-size: 20px;
+      margin-bottom: 20px;
+      background-color: rgb(104, 103, 103);
+      padding: 10px 20px;
+      border-radius: 40px;
+      width: 300px;
+      text-align: center;
+      font-weight: 300;
+  }
+
+  .gameboard{
+   
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .gameboardrow{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .box{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 90px;
+    color: white;
+  }
+
+  .vr{
+    width: 6px;
+    height: 100px ;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .hr{
+    width: 300px;
+    height: 6px;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .scoreboard{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+  }
+
+  .score{
+    background-color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  .btn{
+    background-color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .bottombtns{
+    position: absolute;
+    bottom: 20px;
+  }
+
+  .gamestopped{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(217, 237, 237, 0.798);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    display: none;
+  }
+
+  .gamestopped h2{
+    font-size: 40px;
+    color: #3366ff;
+    margin-bottom: 20px;
+  
+  }
+
+  .gamestopped button{
+    background-color:black;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+  }
+
+  .box:hover{
+    background-color: #b8b8b83c;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+  }
